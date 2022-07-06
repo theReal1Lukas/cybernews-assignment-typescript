@@ -4,7 +4,7 @@
 
 ### - check your node version 'node -v' , should be 14.0.0 or higher.
 
-### - navigate to password_generator directory and install node moudules : 'npm install'
+### - navigate to password_generator directory and install node modules : 'npm install'
 
 ### - start app 'npm start'
 
