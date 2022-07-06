@@ -80,8 +80,8 @@ const PasswordGenerator: React.FC = () => {
   };
 
   return (
-    <div className={styles.password_generator}>
-      <div className={styles.password_generator_texts}>
+    <div className={styles.main}>
+      <div className={styles.texts}>
         <h1 className={styles.text}>Generate strong passwords</h1>
         <p className={styles.text}>
           Upgrade the security of your online accounts.

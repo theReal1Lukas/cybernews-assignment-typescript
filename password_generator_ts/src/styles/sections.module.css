@@ -18,17 +18,6 @@
     margin: 20px
 }
 
-.text,
-.text2 {
-    line-height: 26px;
-}
-
-.text>p,
-.text2>p {
-    font-size: 16px;
-    color: #7A7A7A;
-    margin-top: 25px
-}
 
 .section2 {
     display: flex;
@@ -45,6 +34,18 @@
 .section2>div:last-child {
     width: 30%;
 
+}
+
+.text,
+.text2 {
+    line-height: 26px;
+}
+
+.text>p,
+.text2>p {
+    font-size: 16px;
+    color: #7A7A7A;
+    margin-top: 25px
 }
 
 .logo {
@@ -92,6 +93,5 @@
     .logo2 {
         justify-content: center;
     }
-
 
 }

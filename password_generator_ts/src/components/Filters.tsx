@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/passwordGenerator.module.css";
+import styles from "../styles/filters.module.css";
 interface Props {
   lowFilter: boolean;
   setLowFilter: React.Dispatch<React.SetStateAction<boolean>>;
@@ -22,7 +22,7 @@ const Filters: React.FC<Props> = ({
   setNumFilter,
 }) => {
   return (
-    <div className={styles.filters}>
+    <div className={styles.main}>
       <div className={styles.filter}>
         <input
           className={styles.checkbox}
