@@ -31,24 +31,24 @@ const PasswordGenerator: React.FC = () => {
 
   //check if filters active
   useEffect(() => {
-    if (lowFilter === false) {
+    if (!lowFilter) {
       setLowerCase("");
-    } else if (lowFilter === true) {
+    } else {
       setLowerCase(PSW_CHAR.lower);
     }
-    if (highFilter === false) {
+    if (!highFilter) {
       setUpperCase("");
-    } else if (highFilter === true) {
+    } else {
       setUpperCase(PSW_CHAR.upper);
     }
-    if (numFilter === false) {
+    if (!numFilter) {
       setDigits("");
-    } else if (numFilter === true) {
+    } else {
       setDigits(PSW_CHAR.numbers);
     }
-    if (symFilter === false) {
+    if (!symFilter) {
       setSymbols("");
-    } else if (symFilter === true) {
+    } else {
       setSymbols(PSW_CHAR.characters);
     }
   }, [lowFilter, highFilter, numFilter, symFilter]);
@@ -72,12 +72,7 @@ const PasswordGenerator: React.FC = () => {
   };
 
   const setInputValue = () => {
-    if (
-      lowFilter === false &&
-      highFilter === false &&
-      numFilter === false &&
-      symFilter === false
-    ) {
+    if (!lowFilter && !highFilter && !numFilter && !symFilter) {
       return "Please select at least one filter";
     } else {
       return password;
